@@ -1,0 +1,11 @@
+<template name="rawHTML">
+  <pre>
+    {{ tableStart }}
+      {{#each elements}}
+        {{#each rowElements}}
+          {{html}}
+        {{/each}}
+      {{/each}}
+    {{ tableEnd }}
+  </pre>
+</template>

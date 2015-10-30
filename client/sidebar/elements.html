@@ -1,0 +1,13 @@
+<template name="elements">
+  <ul id="items" class="nav nav-sidebar">
+    {{#each elements}}
+    <li class="element well well-lg">{{{name}}}
+      <p>
+        {{#each rowElements}}
+          {{html}}
+        {{/each}}
+      </p>
+    </li>
+    {{/each}}
+  </ul>
+</template>

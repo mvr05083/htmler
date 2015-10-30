@@ -1,0 +1,15 @@
+<template name="preview">
+  <center>
+    <table style="max-width:600px; width:100%;">
+      <tbody>
+        {{#each elements}}
+        <tr>
+          {{#each rowElements}}
+            {{{ html }}}
+          {{/each}}
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </center>
+</template>

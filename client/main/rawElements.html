@@ -1,0 +1,15 @@
+<template name="rawElements">
+  <div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#preview" aria-controls="preview" role="tab" data-toggle="tab">Preview</a></li>
+      <li role="presentation"><a href="#raw" aria-controls="raw" role="tab" data-toggle="tab">Raw HTML</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="preview">{{> preview}}</div>
+      <div role="tabpanel" class="tab-pane" id="raw">{{> rawHTML}}</div>
+    </div>
+  </div>
+</template>
