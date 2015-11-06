@@ -9,3 +9,11 @@ Template.registerHelper('tableStart', function() {
 Template.registerHelper('tableEnd', function() {
   return '</tbody></table></center>';
 });
+
+Template.registerHelper('rowStart', function(){
+  return '<tr>';
+});
+
+Template.registerHelper('rowEnd', function(){
+  return '</tr>';
+});

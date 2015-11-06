@@ -2,9 +2,11 @@
   <pre>
     {{ tableStart }}
       {{#each elements}}
+      {{ rowStart }}
         {{#each rowElements}}
-          {{html}}
+        {{html}}
         {{/each}}
+      {{ rowEnd }}
       {{/each}}
     {{ tableEnd }}
   </pre>
