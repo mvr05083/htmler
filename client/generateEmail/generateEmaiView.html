@@ -1,0 +1,13 @@
+<template name="generateEmailView">
+  <div class="row">
+    <div class="col-sm-3 col-md-3 sidebar">
+      {{> sidebar }}
+      <button id="addNew" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add New</button>
+    </div>
+    <div class="col-sm-9 col-sm-offset-4 col-md-9 col-md-offset-3 main">
+      <h1 class="page-header">Dashboard</h1>
+      {{> htmlView }}
+      {{> addNewElementModal }}
+    </div>
+  </div>
+</template>

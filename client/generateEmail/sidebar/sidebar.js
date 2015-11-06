@@ -1,4 +1,4 @@
-Template.elements.helpers({
+Template.sidebar.helpers({
   'elements': function() {
     return Elements.find({}, {
       sort: {
@@ -8,7 +8,7 @@ Template.elements.helpers({
   }
 });
 
-Template.elements.events({
+Template.sidebar.events({
   'blur textarea': function(e, t) {
     console.log(this._id);
     console.log(e.target.value);
@@ -17,7 +17,7 @@ Template.elements.events({
 });
 
 // Drag and drop
-Template.elements.onRendered(function() {
+Template.sidebar.onRendered(function() {
   this.$('#items').sortable({
     stop: function(e, ui) {
       el = ui.item.get(0)

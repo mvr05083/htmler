@@ -1,4 +1,4 @@
-Template.modal.events({
+Template.addNewElementModal.events({
   'submit form': function(e, t) {
     e.preventDefault();
     console.log(e.target.htmlType.value);
